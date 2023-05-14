@@ -1,0 +1,164 @@
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  background-color: darkslategrey;
+  font-size: 24px;
+}
+
+p {
+  background-color: azure;
+  grid-area: display;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+button {
+  background-color: rgb(90, 141, 141);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 20px;
+  font-size: large;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#subtract {
+  grid-area: subtract;
+  background-color: rgb(68, 135, 138);
+}
+
+#clear {
+  grid-area: clear;
+  background-color: rgb(224, 80, 80);
+}
+
+#multiply {
+  grid-area: multiply;
+  background-color: rgb(68, 135, 138);
+}
+
+#divide {
+  grid-area: divide;
+  background-color: rgb(68, 135, 138);
+}
+
+#equals {
+  grid-area: equals;
+  background-color: rgb(123, 113, 192);
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#add {
+  grid-area: add;
+  background-color: rgb(68, 135, 138);
+}
+
+#display{
+  grid-area: display;
+  background: #ffffff;
+  padding: 20px;
+}
+
+
+#main {
+  padding: 10px;
+  border: cadetblue solid 5px;
+  width: 300px;
+  background-color: darkgrey;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+
+  display: grid;
+  grid-gap: 2px;
+  grid-template-areas: 'display display display display'
+    'clear clear subtract divide'
+    'seven eight nine multiply'
+    'four five six add'
+    'one two three equals'
+    'zero zero decimal equals'
+  ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+span {
+  color: #ffffff;
+  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+}
